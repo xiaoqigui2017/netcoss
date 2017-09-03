@@ -127,12 +127,9 @@ public class CostController {
         Timestamp timestamp = new Timestamp(new Date().getTime());
         Integer startId = costService.updateStuatsAndTime(cost);
         Map<String,Object> map = new HashMap<String, Object>();
-
-
         System.out.println(timestamp);
         map.put("startId",startId);
         map.put("time",timestamp);
-
         return  map;
     }
 
